@@ -1063,17 +1063,6 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "2b15c43186be67a4fd63bee50d0303afffcef381492ebe2c5d87f324e1b8815c"
 
 [[package]]
-name = "reth-utils"
-version = "0.1.0"
-dependencies = [
- "alloy-eip2930",
- "bincode",
- "revm",
- "revm-database",
- "serde",
-]
-
-[[package]]
 name = "revm"
 version = "20.0.0-alpha.1"
 source = "git+https://github.com/bluealloy/revm#03e3d8dab33962e8ad70437529fa69a7df922a0e"
@@ -1249,6 +1238,17 @@ dependencies = [
  "revm-bytecode",
  "revm-primitives",
  "revm-specification",
+ "serde",
+]
+
+[[package]]
+name = "revm-utils"
+version = "0.1.0"
+dependencies = [
+ "alloy-eip2930",
+ "bincode",
+ "revm",
+ "revm-database",
  "serde",
 ]
 
